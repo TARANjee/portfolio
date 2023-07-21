@@ -2,27 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-@layer base{
-  body{
-    @apply font-[Raleway]
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+@layer base {
+  body {
+    font-family: sans-serif;
   }
-  li{
+
+  li {
     @apply px-4;
     @apply cursor-pointer
   }
+
 }
 
-.content-div{
+.logo {
+  font-size: 35px;
+
+}
+
+span {
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #448AFF;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+
+}
+
+.link::after {
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #448AFF;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(0.5);
+  transform-origin: bottom left;
+
+
+}
+
+.link:active::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+
+}
+
+.content-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:250px;
+  height: 250px;
 }
-.content-div:hover{
-  background-image: linear-gradient(
-    to right,
-    rgba(112,157,255,0.8),
-    hsla(242,74%,61%,0.8)
-  )!important;
+
+.content-div:hover {
+  background-image: linear-gradient(to right,
+      rgba(112, 157, 255, 0.8),
+      hsla(242, 74%, 61%, 0.8)) !important;
 }
