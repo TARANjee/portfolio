@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import moon from '../assets/half-moon.png';
-import sun from '../assets/sun.png';
+import { MdOutlineDarkMode } from 'react-icons/md'
+import { BsSun } from 'react-icons/bs'
+
+
 import { useScrollPosition } from "../hooks/hooks"
 
 import { Link } from 'react-scroll'
@@ -18,15 +20,15 @@ const Navbar = ({ mode, handleMode }) => {
     console.log("scrollPosition->", scrollPosition)
 
 
-   
+
 
     return (
-        <div className={`sticky top-0 w-full h-[80px] flex justify-between items-center px-20  `}>
-            <div>
-                <div className='logo'> &lt;<span className='name'>Taranjeet Singh </span>/&gt;</div>
+        <div className={`sticky top-0 w-full h-[80px] flex justify-between items-center lg:p-10 `}>
+            <div >
+                <div className=' logo'> &lt;<span className='name'>Taranjeet Singh </span>/&gt;</div>
             </div>
             {/* menu */}
-            <div className='hidden md:flex'>
+            <div className='hidden lg:flex'>
                 <ul className='hidden md:flex font-semibold text-lg'>
                     <li >
                         <Link className='link' to="home" smooth={true} duration={500} >
@@ -62,18 +64,18 @@ const Navbar = ({ mode, handleMode }) => {
 
                 </ul>
                 <button className='rounded-full ' onClick={handleMode} >
-                    <img src={mode ? moon : sun} alt={mode ? "night-mode" : "dark-mode"} />
+                    {mode ? <MdOutlineDarkMode size={25} /> : <BsSun size={25} />}
                 </button>
 
             </div>
 
 
             {/* Hamburger */}
-            <div className='md:hidden z-10'>
+            <div className=' lg:hidden z-10 mr-5'>
                 {!show ?
-                    <div className='w-full flex justify-between items-center mr-5  '>
-                        <button className='rounded-full ' onClick={handleMode} >
-                            <img src={mode ? moon : sun} alt={mode ? "night-mode" : "dark-mode"} />
+                    <div className='w-full flex justify-between items-center   '>
+                        <button className='rounded-full mr-5' onClick={handleMode} >
+                            {mode ? <MdOutlineDarkMode size={25} /> : <BsSun size={25} />}
                         </button>
                         <FaBars color={mode ? "black" : "white"} onClick={handleClick} />
                     </div>
