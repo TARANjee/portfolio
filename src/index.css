@@ -18,15 +18,16 @@
 
 .logo {
   font-size: 35px;
-
+  font-weight: 600;
 }
 
-span {
+.name {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #448AFF;
   font-weight: 600;
   font-size: 35px;
 }
+
 
 .link {
   display: inline-block;
