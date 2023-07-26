@@ -23,7 +23,7 @@ const Navbar = ({ mode, handleMode }) => {
 
 
     return (
-        <div className={`sticky top-0 w-full h-[80px] flex justify-between items-center lg:p-10 `}>
+        <div className={`sticky top-0 w-full h-[80px] flex justify-between items-center lg:p-10 origin-top transition-all`}>
             <div >
                 <div className=' logo'> &lt;<span className='name'>Taranjeet Singh </span>/&gt;</div>
             </div>
@@ -35,17 +35,17 @@ const Navbar = ({ mode, handleMode }) => {
                             Home
                         </Link>
                     </li>
-
-                    <li>
-                        <Link className='link' to="skills" smooth={true} duration={500} >
-                            Skills
-                        </Link>
-                    </li>
                     <li>
                         <Link className='link' to="Education" smooth={true} duration={500} >
                             Education
                         </Link>
                     </li>
+                    <li>
+                        <Link className='link' to="skills" smooth={true} duration={500} >
+                            Skills
+                        </Link>
+                    </li>
+
                     <li>
                         <Link className='link' to="Projects" smooth={true} duration={500} >
                             Projects
@@ -87,16 +87,10 @@ const Navbar = ({ mode, handleMode }) => {
 
             </div>
             {/* Mobile Menu */}
-            <ul className={!show ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#000000] text-gray-300 flex flex-col justify-center items-center'}>
+            <ul className={!show ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black text-white flex flex-col justify-center items-center '}>
                 <li className='py-6 text-4xl'>
                     <Link className='link' onClick={handleClick} to="home" smooth={true} duration={500} >
                         Home
-                    </Link>
-                </li>
-
-                <li className='py-6 text-4xl'>
-                    <Link className='link' onClick={handleClick} to="skills" smooth={true} duration={500} >
-                        Skills
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
@@ -104,6 +98,12 @@ const Navbar = ({ mode, handleMode }) => {
                         Education
                     </Link>
                 </li>
+                <li className='py-6 text-4xl'>
+                    <Link className='link' onClick={handleClick} to="skills" smooth={true} duration={500} >
+                        Skills
+                    </Link>
+                </li>
+
                 <li className='py-6 text-4xl'>
                     <Link className='link' onClick={handleClick} to="Projects" smooth={true} duration={500} >
                         Projects
