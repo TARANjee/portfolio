@@ -17,15 +17,14 @@
 }
 
 .logo {
-  font-size: 35px;
+ 
   font-weight: 600;
 }
 
 .name {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #448AFF;
-  font-weight: 600;
-  font-size: 35px;
+  
 }
 
 
@@ -73,4 +72,12 @@
   background-image: linear-gradient(to right,
       rgba(112, 157, 255, 0.8),
       hsla(242, 74%, 61%, 0.8)) !important;
+}
+
+.vertical {
+  border: 5px;
+  height: 100%;
+  border-radius: 30%;
+  border-style: dashed;
+
 }

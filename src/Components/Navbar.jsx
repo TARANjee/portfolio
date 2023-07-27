@@ -25,7 +25,7 @@ const Navbar = ({ mode, handleMode }) => {
     return (
         <div className={`sticky top-0 w-full h-[80px] flex justify-between items-center lg:p-10 origin-top transition-all`}>
             <div >
-                <div className=' logo'> &lt;<span className='name'>Taranjeet Singh </span>/&gt;</div>
+                <div className=' text-3xl font-bold'> &lt;<span className='name text-2xl sm:text-4xl font-bold'>Taranjeet Singh </span>/&gt;</div>
             </div>
             {/* menu */}
             <div className='hidden lg:flex'>

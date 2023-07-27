@@ -13,7 +13,7 @@ function App() {
     <div className={`${mode ? "transition ease-in delay-150  bg-[#ffffff] text-black" : " transition ease-out delay-150 bg-[#000000] text-white"}`} >
       <Navbar mode={mode} handleMode={handleMode} />
       <Home mode={mode} />
-      <Education />
+      <Education mode={mode} />
       <Skills />
       <Work />
       <Contact />
