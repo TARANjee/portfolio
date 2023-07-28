@@ -15,18 +15,17 @@ const Skills = () => {
     return (
         <div name='skills' className='w-full md:h-screen  flex justify-center items-center '>
             <div className='max-w-[1000px] p-4  flex flex-col justify-center  mx-auto w-full  '>
-                <div className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
+                <div className='flex justify-center'>
+                    <p className=' text-4xl font-bold inline border-b-4 border-[#448AFF]'>
                         Skills
                     </p>
-                    <p className='py-6'>&frasl; &frasl; These are the technologies I've worked with.</p>
                 </div>
-
+               
                 {/* Container */}
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center '>
+                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center mt-10'>
 
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
+                        <img className='w-10 mx-auto' src={HTML} alt="HTML icon" />
                         <p className='my-4'>HTML</p>
                     </div>                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={CSS} alt="CSS icon" />

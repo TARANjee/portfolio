@@ -3,24 +3,20 @@ import { FaUniversity } from 'react-icons/fa'
 import { HiMiniComputerDesktop } from 'react-icons/hi2'
 import { ImArrowRight } from 'react-icons/im'
 import { RiIncreaseDecreaseLine } from 'react-icons/ri'
-
-
+import { BsCalendarEvent } from 'react-icons/bs'
 
 
 const Education = ({ mode }) => {
     return (
         <div name='Education' className=' py-20 w-full origin-top transition-all'>
             <div className='flex justify-center'>
-                <h1 className='text-4xl mt-5  font-bold '>Education</h1>
+                <h1 className='text-4xl mt-5  border-b-4 border-[#448AFF] font-bold '>Education</h1>
             </div>
             <div className='flex flex-row justify-center mt-20 '>
                 <div>
                     <div className={`vertical border-${mode ? 'black' : 'white'}`}></div>
                 </div>
-
                 <div>
-
-
                     <div className='flex flex-row  justify-center items-center mt-20 '>
                         <div >
                             <ImArrowRight className='text-2xl' />
@@ -37,6 +33,10 @@ const Education = ({ mode }) => {
                             <p className='ml-4 text-lg italic flex items-center'>
                                 <RiIncreaseDecreaseLine className='text-2xl' />
                                 <div className='m-2'>CGPA: 7.4</div>
+                            </p>
+                            <p className='ml-4 text-lg italic flex items-center'>
+                                <BsCalendarEvent className='text-2xl' />
+                                <div className='m-2'>2024</div>
                             </p>
                         </div>
                     </div>
@@ -58,6 +58,10 @@ const Education = ({ mode }) => {
                                 <RiIncreaseDecreaseLine className='text-2xl' />
                                 <div className='m-2'>CGPA: 8.3</div>
                             </p>
+                            <p className='ml-4 text-lg italic flex items-center'>
+                                <BsCalendarEvent className='text-2xl' />
+                                <div className='m-2'>2022</div>
+                            </p>
                         </div>
                     </div>
 
@@ -78,6 +82,10 @@ const Education = ({ mode }) => {
                                 <RiIncreaseDecreaseLine className='text-2xl' />
                                 <div className='m-2'>CGPA: 7.0</div>
                             </p>
+                            <p className='ml-4 text-lg italic flex items-center'>
+                                <BsCalendarEvent className='text-2xl' />
+                                <div className='m-2'>2019</div>
+                            </p>
                         </div>
                     </div>
                     <div className='flex flex-row  justify-center items-center mt-20 '>
@@ -96,6 +104,10 @@ const Education = ({ mode }) => {
                             <p className='ml-4 text-lg italic flex items-center'>
                                 <RiIncreaseDecreaseLine className='text-2xl' />
                                 <div className='m-2'>CGPA: 7.0</div>
+                            </p>
+                            <p className='ml-4 text-lg italic flex items-center'>
+                                <BsCalendarEvent className='text-2xl' />
+                                <div className='m-2'>2017</div>
                             </p>
                         </div>
                     </div>
