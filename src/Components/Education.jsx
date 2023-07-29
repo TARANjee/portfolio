@@ -8,11 +8,11 @@ import { BsCalendarEvent } from 'react-icons/bs'
 
 const Education = ({ mode }) => {
     return (
-        <div name='Education' className=' py-20 w-full origin-top transition-all'>
+        <div name='Education' className=' my-20  w-full transition-all'>
             <div className='flex justify-center'>
-                <h1 className='text-4xl mt-5  border-b-4 border-[#448AFF] font-bold '>Education</h1>
+                <h1 className='text-4xl  border-b-4 border-[#448AFF] font-bold '>Education</h1>
             </div>
-            <div className='flex flex-row justify-center mt-20 '>
+            <div className='flex flex-row justify-center mt-10 '>
                 <div>
                     <div className={`vertical border-${mode ? 'black' : 'white'}`}></div>
                 </div>
