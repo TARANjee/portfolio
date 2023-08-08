@@ -69,9 +69,10 @@
 }
 
 .content-div:hover {
-  background-image: linear-gradient(to right,
-      rgba(112, 157, 255, 0.8),
-      hsla(242, 74%, 61%, 0.8)) !important;
+  background-image: linear-gradient(to top,
+      rgba(68, 138, 255,1),
+      hsla(0, 0%, 30%, 0.8)) !important;
+
 }
 
 .vertical {

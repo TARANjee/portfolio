@@ -18,8 +18,8 @@ function App() {
       <Home mode={mode} />
       <Education mode={mode} />
       <Skills />
-      <Work />
-      <Contact />
+      <Work mode={mode}/>
+      <Contact mode={mode}  />
     </div>
   );
 }

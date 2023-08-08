@@ -1,46 +1,41 @@
 import React from 'react';
 import BoxOffice from '../assets/box-office.PNG';
+import portfolio from '../assets/portfolio.png';
+import Project from './Work/Project';
 
 
-const Work = () => {
+const Work = ({ mode }) => {
     return (
         <div name='Projects' className='w-full md:h-screen flex justify-center items-center '>
             <div className='max-w-[1000px] p-4  flex flex-col justify-center  mx-auto w-full  '>
                 <div className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
-                        Work
-                    </p>
-                    <p className='py-6'>&frasl; &frasl; Check out some of my recent work</p>
+                    <div className='flex justify-center'>
+                        <h1 className='text-4xl  border-b-4 border-[#448AFF] font-bold '>Projects</h1>
+                    </div>
+                    <p className='py-6 flex justify-center text-lg'>Here you will find some of the personal and clients projects that I have created. </p>
+
                 </div>
 
                 {/* Container */}
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
 
-                    {/* Grid Item */}
-                    <div
-                        style={{ backgroundImage: `url(${BoxOffice})` }}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    >
-                        {/* Hover Effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-white tracking-wider'>
-                                Box Office
-                            </span>
-                            <div className='pt-8 text-center'>
-                                <a href='https://taranjee.github.io/box-office/' target="_blank"rel="noreferrer" >
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href='https://github.com/TARANjee/box-office' target="_blank"rel="noreferrer">
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <Project
+                        projectImg={portfolio}
+                        projectName="My Portfolio"
+                        demoLink="https://taranjee.github.io/portfolio/"
+                        codeLink="https://github.com/TARANjee/portfolio"
+                        mode={mode}
+                    />
+
+                    <Project
+                        projectImg={BoxOffice}
+                        projectName="Box Office"
+                        demoLink="https://taranjee.github.io/box-office/"
+                        codeLink="https://github.com/TARANjee/box-office"
+                        mode={mode}
+                    />
+
+
                 </div>
             </div>
         </div>

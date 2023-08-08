@@ -40,28 +40,28 @@ const Skills = () => {
 
                     <div className='  hover:scale-110 duration-500 '>
                         <img className='w-20 mx-auto' src={Cpp} alt="c++ icon" />
-                        <p className='my-4'>C++</p>
+                        <p className='my-4 text-lg'>C++</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={Java} alt="JAVA icon" />
-                        <p className='my-4'>JAVA</p>
+                        <p className='my-4 text-lg'>JAVA</p>
                     </div>
                     <div className='  hover:scale-110 duration-500 '>
                         <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
-                        <p className='my-4'>HTML</p>
+                        <p className='my-4 text-lg'>HTML</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={CSS} alt="CSS icon" />
-                        <p className='my-4'>CSS</p>
+                        <p className='my-4 text-lg'>CSS</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={JavaScript} alt="JavaScript icon" />
-                        <p className='my-4'>JAVASCRIPT</p>
+                        <p className='my-4 text-lg'>JAVASCRIPT</p>
                     </div>
 
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={Tailwind} alt="Tailwind icon" />
-                        <p className='my-4'>TAILWIND</p>
+                        <p className='my-4 text-lg'>TAILWIND</p>
                     </div>
 
                 </div>
@@ -77,15 +77,15 @@ const Skills = () => {
 
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={Android} alt="React icon" />
-                        <p className='my-4'>ANDROID</p>
+                        <p className='my-4 text-lg'>ANDROID</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={ReactImg} alt="React icon" />
-                        <p className='my-4'>REACT JS</p>
+                        <p className='my-4 text-lg'>REACT JS</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={Node} alt="Node icon" />
-                        <p className='my-4'>NODE JS</p>
+                        <p className='my-4 text-lg'>NODE JS</p>
                     </div>
 
                 </div>
@@ -103,16 +103,16 @@ const Skills = () => {
                 <div className='w-full md:flex  justify-evenly items-center  text-center mt-5'>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={AndroidStudio} alt="React icon" />
-                        <p className='mt-4 mr-4 ml-4'>ANDROID</p>
-                        <p className='mb-4 mr-4 ml-4'>STUDIO</p>
+                        <p className='mt-4 mr-4 ml-4 '>ANDROID</p>
+                        <p className='mb-4 mr-4 ml-4 '>STUDIO</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={Git} alt="React icon" />
-                        <p className='my-4'>GIT</p>
+                        <p className='my-4 text-lg'>GIT</p>
                     </div>
                     <div className=' hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={GitHub} alt="Node icon" />
-                        <p className='my-4'>GITHUB</p>
+                        <p className='my-4 text-lg'>GITHUB</p>
                     </div>
 
                 </div>
