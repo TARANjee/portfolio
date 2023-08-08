@@ -12,7 +12,7 @@ const Contact = ({ mode }) => {
                 </div>
             </div>
 
-            <div className='max-w-[1000px] md:flex justify-between items-center pt-10'>
+            <div className='max-w-[1000px] md:flex justify-between items-center pt-10 pb-10'>
                 <div className='w-full flex flex-col justify-center '>
                     <h1 className='md:text-5xl text-3xl   font-bold '>Let's chat.</h1>
                     <h1 className='md:text-5xl text-3xl  font-bold '> Tell me about your project.</h1>
@@ -26,13 +26,13 @@ const Contact = ({ mode }) => {
                     </div>
 
                 </div>
-                <div className='w-full shadow-md shadow-[#555555] rounded-md p-4  flex flex-col justify-center'>
+                <div className={`w-full shadow-md shadow-[#555555] rounded-md p-4  ${mode ? "bg-[#FEFEFE] " :"bg-[#222B45]"} flex flex-col justify-center duration-150 delay-150`}>
                     <h1 className='text-2xl p-4 font-bold'>Send me a message &#128640;</h1>
 
                     <form method='POST' action='https://getform.io/f/9d4aad5f-5092-4e96-ae03-4b9a86178bc1' className=' flex flex-col justify-center'>
-                        <input className='focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' type="text" placeholder='Full name' name='name' required />
-                        <input className='mt-4 focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' type="email" id="email" placeholder='Email address' name='email' required />
-                        <input className='mt-4 focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' name='message' placeholder='Message' required />
+                        <input className='focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' type="text" placeholder='Full name*' name='name' required />
+                        <input className='mt-4 focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' type="email" id="email" placeholder='Email address*' name='email' required />
+                        <input className='mt-4 focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' name='message' placeholder='Message*' required />
                         <label className='mt-4 text-sm font-bold'>Tell us more about your project</label>
                         <textarea className='mt-4 focus:outline-none focus:border-[#448AFF] border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:ring-1 focus:ring-[#448AFF] bg-[#F0FFFF] text-black p-2' name='project' rows="2" required />
 

@@ -6,7 +6,7 @@ const Project = ({ projectImg, projectName, demoLink, codeLink ,mode}) => {
             {/* Grid Item */}
             <div
                 style={{ backgroundImage: `url(${projectImg})`,backgroundSize:'cover',backgroundPosition:'center' }}
-                className={`shadow-lg ${mode ? "shadow-[#040c16] " :"shadow-[#C0C0C0]"}  group container  rounded-md flex justify-center items-center mx-auto content-div`}
+                className={`shadow-sm ${mode ? "shadow-[#040c16] " :"shadow-[#C0C0C0]"}  group container  rounded-md flex justify-center items-center mx-auto content-div`}
             >
                 {/* Hover Effects */}
                 <div className='opacity-0 group-hover:opacity-100 group-hover:scale-95   duration-300  ease-in-out delay-50'>

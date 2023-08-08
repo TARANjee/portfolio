@@ -41,9 +41,6 @@ const Education = ({ mode }) => {
                         year="2017"
                     />
 
-
-
-
                 </div>
             </div>
         </div>

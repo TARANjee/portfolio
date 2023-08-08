@@ -12,7 +12,7 @@ function App() {
   const [mode, setMode] = useState(false)
   const handleMode = () => setMode(!mode)
   return (
-    <div className={`${mode ? "transition ease-in delay-150  bg-[#ffffff] text-black" : " transition ease-out delay-150 bg-[#000000] text-white"}`} >
+    <div className={`${mode ? "transition ease-in delay-150  bg-[#ffffff] text-black" : " transition ease-out delay-150 bg-[#101426] text-white"}`} >
      {/* <Message /> */}
       <Navbar mode={mode} handleMode={handleMode} />
       <Home mode={mode} />
